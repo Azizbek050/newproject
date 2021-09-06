@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kontact.css">
+    <link rel="stylesheet" href="./boxicons-master/css/boxicons.min.css">
+
+</head>
+<body>
+    <div class="kontact" id="kontact">
+        <div class="navbar">
+            <div class="container11 ">
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/Logo Maya Plast 3.png" alt=""></a>
+                    </div>
+                <i class='bx bx-menu bx-burst' style='color:#ffffff' ></i>
+                <ul>
+                    <li><a href="onas.html">О нас</a></li>
+                    <li><a href="katalog.html">Каталог</a></li>
+                    <li><a href="obraz.html">Образцы</a></li>
+                    <li><a href="klient.html">Клиенты</a></li>
+                    <li><a href="kontact.html">Контакты</a></li>
+                    <li><i class='bx bx-world bx-spin' style='font-size: 30px; color:#fff'></i></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div id="navUl" class="none">
+            <ul>
+                <li><a href="onas.html">О нас</a></li>
+                <li><a href="katalog.html">Каталог</a></li>
+                <li><a href="obraz.html">Образцы</a></li>
+                <li><a href="klient.html">Клиенты</a></li>
+                <li><a href="kontact.html">Контакты</a></li>
+                <li><i class='bx bx-world bx-spin' style='font-size: 40px; color:rgb(248, 62, 62)'></i></li>
+                <div id="opshn" class="none">
+                    <div id="lengs">
+                        <div class="lengs-box">
+                            <h4>UZ</h4>
+                        </div>
+                        <div class="lengs-box">
+                            <h4>ENG</h4>
+                        </div>
+                        <div class="lengs-box">
+                            <h4>RU</h4>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="footer_heder">
+                <i class='bx bxs-chevron-left bx-fade-right' style='color:#ec4d4d' ></i>
+                <a href="index.html">главная страница</a>
+                <a href="" id="acolor" >. контакты</a>
+            </div>
+
+
+            <div class="footer_top">
+                <div class="footer_top_left">
+                    <h1>Связаться с нами</h1>
+                    <form action="">
+                        <input type="text" placeholder="Ф.И.О">
+                        <input type="text" placeholder="Электронный адрес">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                        <button>Отправить</button>
+                    </form>
+                </div>
+                <div class="footer_top_right">
+                    <div class="footer_top_right_left">
+                        <i class='bx bx-mail-send bx-tada' style='font-size: 40px; color:#ec3737' ></i>
+                        <h3>myaplast @gmail.com</h3>
+
+                    </div>
+                    <div class="footer_top_right_right">
+                        <i class='bx bx-phone-call bx-tada' style='font-size: 40px; color:#ec4d4d' ></i>
+                        <h3> +998932722666  +998973700507</h3>
+                    </div>
+                    <div class="footer_top_right_right1">
+                        <h2>Адрес:</h2>
+                        <h3>Ташкентская область , Кибрайский район, Ункурган, махалла Парвоз</h3>
+                    </div>
+
+                    <img src="./center_img/icon/Rectangle 3269.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    <h3>© Все права защищены. </h3>
+                </div>
+                <div class="footer_bottom_right">
+                    <nav>
+                        <ul>
+                            <li><a href=""><img src="./center_img/icon/bx_bxl-instagram-alt.png" alt=""></a></li>
+                            <li><a href=""><img src="./center_img/icon/bi_facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="./center_img/icon/fa_telegram.png" alt=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+    <script>
+        let mediaIkon = document.querySelector(".container11 .bx-menu")
+        let ul = document.querySelector("#navUl")
+        let lengs = document.querySelector("#navUl ul li i")
+        let opshn = document.querySelector("#navUl #opshn")
+
+        console.log(opshn)
+        console.log(lengs)
+        console.log(ul)
+        console.log(mediaIkon)
+        // mediaIkon.dbclick = function () {
+        //     ul.style.display = "none"
+        // }
+
+        mediaIkon.onclick = function () {
+            ul.classList.toggle("none")
+        }
+        lengs.onclick = function () {
+            opshn.classList.toggle("none")
+        }
+    </script>
+</body>
+</html>
